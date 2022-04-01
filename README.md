@@ -15,7 +15,7 @@ git clone https://github.com/Jtiv/Wicked-Sick-API.git
 ```
    - npm start
    - localhost:8080
-   - incidents to search all incidents
+   - /incidents to search all incidents
    - /id to search by id
 ```
 
