@@ -1,8 +1,17 @@
 const mongoose = require("mongoose");
 
+let connectionString = process.env.MONGODB_URI
+let MONGODB_URI = connectionString || "mongodb://localhost/Incidents";
+
+let mongooseConfig = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
+
 mongoose
-    .connect("mongodb://127.0.0.1:27017/Incidents")
-    .catch((error) =>
+  .connect(MONGODB_URI, mongooseConfig)
+  .catch((error) =>
     console.error("Error connecting: ", error.message)
   );
 
