@@ -1,6 +1,6 @@
 let model = require('./models/incidents.js');
 let express = require('express');
-//const { request, response } = require('./routes/incidentRouter.js');
+// const { request, response } = require('./routes/incidentRouter.js');
 
 
 let controller = {
