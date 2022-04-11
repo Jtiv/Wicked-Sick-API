@@ -10,14 +10,14 @@ let controller = {
       .then(data => response.json(data))
   },
   //define get route
-  get(request, response) {
+  get(response) {
     model
       .find({})
       .then(data => response.json(data))
 
   },
   //define delete route
-  delete(request, response) {
+  delete(request) {
     model
       .deleteOne(request.params.id)
   },
