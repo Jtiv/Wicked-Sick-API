@@ -12,10 +12,10 @@ db.on("connected", () => {
   console.log("Connecting to MongoDB!");
   app.listen(process.env.PORT, () => {
     console.log(
-      `Express server running in development on: http://localhost:${PORT}`
+      `Express server running in development on: http://localhost:${process.env.PORT}`
     );
   });
 });
 
 db.on('error', error => console.error("error connecting to server\n" + error));
-db.on('listening', () => console.log("yeah we really connected ze doublecheck" + PORT));
+db.on('listening', () => console.log("yeah we really connected ze doublecheck" + process.env.PORT));
