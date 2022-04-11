@@ -1,7 +1,7 @@
 let model = require('./models/incidents.js');
 let express = require('express');
-const { response } = require('./routes/incidentRouter.js');
-const req = require('express/lib/request');
+//const { request, response } = require('./routes/incidentRouter.js');
+
 
 let controller = {
   create(request, response) {
@@ -12,7 +12,7 @@ let controller = {
   //define get route
   get(request, response) {
     model
-      .find()
+      .find({})
       .then(data => response.json(data))
 
   },

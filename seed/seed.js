@@ -4,9 +4,9 @@ const seedData = require('./incidents.json');
 
 const seedDatabase = async () => {
 
-    db.dropDatabase();
-    await seedModel.insertMany(seedData);
-    db.close();
+  db.dropDatabase();
+  await seedModel.insertMany(seedData);
+  db.close();
 
 };
 
