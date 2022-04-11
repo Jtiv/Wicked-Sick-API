@@ -4,13 +4,13 @@ const routes = require('./routes/incidentRouter.js');
 
 const app = routes;
 
-const PORT = 8080;
+//const PORT = 8080;
 
 
 db.on("connected", () => {
   console.clear();
   console.log("Connecting to MongoDB!");
-  app.listen(PORT, () => {
+  app.listen(process.env.PORT, () => {
     console.log(
       `Express server running in development on: http://localhost:${PORT}`
     );
