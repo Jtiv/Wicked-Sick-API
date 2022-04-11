@@ -3,7 +3,7 @@ let controller = require('../controller.js');
 
 let router = new express.Router();
 
-router.get('/', controller.get);
+// router.get('/', controller.get);
 router.post('/', controller.create);
 router.get('/incidents', controller.get);
 router.get('/:id', controller.getIncidentById);
