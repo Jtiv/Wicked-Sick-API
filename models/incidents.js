@@ -3,26 +3,26 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let Incident = new Schema({
-    "id" : Number, 
-    "open_date" : String,
-    "name" : String, 
-    "location" : String,
-    "lat" : Number,
-    "lon" : Number,
-    "threat" : String,
-    "tags" : String,
-    "commodity" : String,
-    "measure_skim" : Boolean,
-    "measure_shore" : Boolean,
-    "measure_bio" : Boolean,
-    "measure_disperse" : Boolean,
-    "measure_burn" : Boolean,
-    "max_ptl_release_gallons": Number,
-    "posts" : Number,
-    "description" : String,
+  "id": { type: Number, required: true },
+  "open_date": { type: String },
+  "name": { type: String },
+  "location": { type: String },
+  "lat": { type: Number },
+  "lon": { type: Number },
+  "threat": { type: String },
+  "tags": { type: String },
+  "commodity": { type: String },
+  "measure_skim": { type: Boolean },
+  "measure_shore": { type: Boolean },
+  "measure_bio": { type: Boolean },
+  "measure_disperse": { type: Boolean },
+  "measure_burn": { type: Boolean },
+  "max_ptl_release_gallons": { type: Number },
+  "posts": { type: Number },
+  "description": { type: String },
 });
 
 
-module.exports =  mongoose.model("Incidents", Incident);
+module.exports = mongoose.model("Incidents", Incident);
 
 
