@@ -1,6 +1,7 @@
 # Wicked-Sick-API
 Searchable chemical spill api. Put in an address and see the nearest incident. Built for GA-SEI project 5
 (currently only RUD-able as a full collection or by ID, searchable address coming soon)
+## Api root - https://chemspill-api.herokuapp.com/incidents
 
 ## Installation
 
